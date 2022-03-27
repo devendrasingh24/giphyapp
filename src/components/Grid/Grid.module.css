@@ -1,0 +1,20 @@
+:root {
+    --spaces: 15px;
+  }
+  .grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -15px; /* gutter size offset */
+    width: auto;
+  }
+  .grid_column {
+    padding-left: var(--spaces); /* gutter size */
+    background-clip: padding-box;
+  }
+  
+  
+  .grid_column > * { 
+    background: grey;
+    margin-bottom: var(--spaces);
+  }
